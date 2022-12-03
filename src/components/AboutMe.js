@@ -1,17 +1,23 @@
 import React from 'react';
-
+import City from '../images background/City.jpg'
 const styles = {
   sectionStyles: {
-    background: 'orange',
+    background: `url(${City})`,
+    height: "400px",
+    backgroundSize: "cover"
   },
+  textStyle: {
+    color: "white",
+    background: "black"
+  }
 };
 
 
-function aboutMe() {
+function AboutMe() {
   return (
     <section style={styles.sectionStyles}>
-      <h2>About Me</h2>
-      <p>
+      <h2 style={styles.textStyle}>About Me</h2>
+      <p style={styles.textStyle}>
       My name is Vasu Apparao and I am an aspiring full stack web developer with a background in 2D Animation and Japanese language. 
       I work well in teams and great at completing tasks both large and small. 
       I am always proactive in solving problems and continually in search of new problems to solve in the ever changing world of web development. 
@@ -23,4 +29,4 @@ function aboutMe() {
   );
 }
 
-export default aboutMe;
+export default AboutMe;

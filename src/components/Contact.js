@@ -1,5 +1,5 @@
 import React from 'react'
-const SubmitForm = () => {
+const ContactForm = () => {
   const [formState, formReport] = React.useState('Send')
   const sentIn = (e) => {
     e.preventDefault()
@@ -41,4 +41,4 @@ const SubmitForm = () => {
     </div>
   )
 }
-export default SubmitForm
+export default ContactForm

@@ -2,31 +2,25 @@ import React from 'react';
 
 const styles = {
   navbarStyle: {
-    background: 'blue',
+    background: 'aqua',
     justifyContent: 'flex-end',
     display: 'flex'
+  },
+  linkStyle:{
+    margin: '10px',
   }
 };
 
 
 
-function Navbar() {
+function Navbar({setCurrentPage}) {
   return (
     <nav style={styles.navbarStyle}>
-      <a href="/">About Me</a>
-    </nav>,
-
-    <nav style={styles.navbarStyle}>
-    <a href="/">Contact</a>
-  </nav>,
-
-    <nav style={styles.navbarStyle}>
-    <a href="/">Portfolio</a>
-  </nav>,
-
-    <nav style={styles.navbarStyle}>
-    <a href="/">Resume</a>
-  </nav>
+      <a href="#" style={styles.linkStyle}onClick={()=>{setCurrentPage("about")}}>About Me</a>
+      <a href="#" style={styles.linkStyle}onClick={()=>{setCurrentPage("portfolio")}}>Portfolio</a>
+      <a href="#" style={styles.linkStyle}onClick={()=>{setCurrentPage("contact")}}>Contact</a>
+      <a href="#" style={styles.linkStyle}onClick={()=>{setCurrentPage("resume")}}>Resume</a>
+    </nav>
   );
 }
 
