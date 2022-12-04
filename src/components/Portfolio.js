@@ -1,6 +1,7 @@
 
 import React from 'react';
 import Bike from '../images background/Bike.jpg'
+import GitHub from '../images background/GitHub.png'
 const styles = {
   sectionStyles: {
     background: `url(${Bike})`,
@@ -11,6 +12,12 @@ const styles = {
   imageStyles:{
     width: "250px",
     height: "250px",
+  },
+  gitHubStyles:{
+    background: `url(${GitHub})`,
+    width: "50px",
+    height: "50px",
+    marginLeft: "200px"
   }
 
 };
@@ -28,11 +35,13 @@ function Portfolio() {
           <div class="text">Prework</div>
         </div>
       </a>
+
       <a href="https://github.com/Elduderino23/prework-study-guide">
         <div class="gif_1_middle">
-        <img src='GitHub.png' alt="Prework"style={styles.imageStyles}/>
+        <img src={GitHub} alt="Repo"style={styles.gitHubStyles}/>
         </div>
       </a>
+
     </div>
     <div class="gif_1">
       <a href="https://elduderino23.github.io/horiseon-accessibility-rework/">
@@ -40,6 +49,12 @@ function Portfolio() {
           style={styles.imageStyles}/>
         <div class="gif_1_middle">
           <div class="text">Horiseon</div>
+        </div>
+      </a>
+
+      <a href="https://github.com/Elduderino23/horiseon-accessibility-rework">
+        <div class="gif_1_middle">
+        <img src={GitHub} alt="Repo"style={styles.gitHubStyles}/>
         </div>
       </a>
     </div>
@@ -52,6 +67,12 @@ function Portfolio() {
           <div class="text">Mini Project</div>
         </div>
       </a>
+
+      <a href="https://github.com/Elduderino23/apparao-mini-project">
+        <div class="gif_1_middle">
+        <img src={GitHub} alt="Repo"style={styles.gitHubStyles}/>
+        </div>
+      </a>
     </div>
     <div class="gif_1">
       <a href="https://turtle2001.github.io/Kronos-StatIM/">
@@ -61,23 +82,41 @@ function Portfolio() {
           <div class="text">KronosStatim</div>
         </div>
       </a>
+
+      <a href="https://github.com/turtle2001/Kronos-StatIM">
+        <div class="gif_1_middle">
+        <img src={GitHub} alt="Repo"style={styles.gitHubStyles}/>
+        </div>
+      </a>
     </div>
     <div class="gif_1">
-      <a href="https://github.com/Elduderino23/apparao-vasu-pwa">
+      <a href="https://apparao-vasu-pwa.herokuapp.com/">
         <img src="https://media.tenor.com/ZN-NVOQqSV8AAAAd/alex-mason-codm.gif"  alt="PWA"
           style={styles.imageStyles}/>
         <div class="gif_1_middle">
           <div class="text">PWA</div>
         </div>
       </a>
+
+      <a href="https://github.com/Elduderino23/apparao-vasu-pwa">
+        <div class="gif_1_middle">
+        <img src={GitHub} alt="Repo"style={styles.gitHubStyles}/>
+        </div>
+      </a>
     </div>
     <div class="gif_1">
       <a href="https://elduderino23.github.io/apparao-vasu-calender/">
-        <img src= alt="Calendar"
+        <img src="https://media.tenor.com/UPCN5wj34n0AAAAd/call-of.gif" alt="Calendar"
           style={styles.imageStyles}/>
         <div class="gif_1_middle">
           <div class="text">Calendar</div>
         </div>
+
+        <a href="https://github.com/Elduderino23/apparao-vasu-calender">
+        <div class="gif_1_middle">
+        <img src={GitHub} alt="Repo"style={styles.gitHubStyles}/>
+        </div>
+      </a>
       </a>
     </div>
  
