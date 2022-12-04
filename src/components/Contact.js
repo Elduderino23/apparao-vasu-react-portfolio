@@ -6,7 +6,11 @@ const styles = {
     height: "900px",
     backgroundSize: "cover",
     backgroundPosition: "center",
-  }
+  },
+  textStyle: {
+    color: "gold",
+    textShadow: "2px 2px 1px black, 0 0 25px maroon, 0 0 5px darkblue"
+  },
 
 };
 const ContactForm = () => {
@@ -26,27 +30,27 @@ const ContactForm = () => {
   return (
    <section style={styles.contactStyles}>
      <div className="container mt-5">
-      <h2 className="mb-3">Contact</h2>
+      <h2 className="mb-3 ContactMe"style={styles.textStyle}>Contact</h2>
       <form sentIn={sentIn}>
         <div className="mb-3">
-          <label className="form-label" htmlFor="name">
+          <label className="form-label" htmlFor="name" style={styles.textStyle}>
             Name
           </label>
           <input className="form-control" type="text" id="name" required />
         </div>
         <div className="mb-3">
-          <label className="form-label" htmlFor="email">
+          <label className="form-label" htmlFor="email" style={styles.textStyle}>
             Email
           </label>
           <input className="form-control" type="email" id="email" required />
         </div>
         <div className="mb-3">
-          <label className="form-label" htmlFor="message">
+          <label className="form-label" htmlFor="message" style={styles.textStyle}>
             Message
           </label>
           <textarea className="form-control" id="message" required />
         </div>
-        <button className="btn btn-danger" type="submit">
+        <button className="btn btn-danger" type="submit" style={styles.textStyle}>
           {formState}
         </button>
       </form>

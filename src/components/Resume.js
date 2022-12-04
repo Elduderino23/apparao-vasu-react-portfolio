@@ -8,13 +8,17 @@ const styles = {
     height: "900px",
     backgroundSize: "cover"
   },
+  textStyle: {
+    color: "gold",
+    textShadow: "2px 2px 1px black, 0 0 25px maroon, 0 0 5px darkblue"
+  },
 }
 
 function Resume() {
   return(
     <div style={styles.resumeStyles}>
-    <h1> My Resume </h1>
-    <a href= {resume} download>Link text</a>
+    <h2 className="ResumeLink" style={styles.textStyle}> My Resume </h2>
+    <a href= {resume} download style={styles.textStyle}>click here for resume</a>
     </div>
   )
 }

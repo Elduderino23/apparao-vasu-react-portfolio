@@ -22,7 +22,7 @@ const styles = {
 function AboutMe() {
   return (
     <section style={styles.sectionStyles}>
-      <h2 style={styles.textStyle}>About Me</h2>
+      <h2 className= "AboutMe"style={styles.textStyle}>About Me</h2>
       <img className="portrait"  src={Portrait}></img>
       <p style={styles.textStyle}>
       My name is Vasu Apparao and I am an aspiring full stack web developer with a background in 2D Animation and Japanese language. 

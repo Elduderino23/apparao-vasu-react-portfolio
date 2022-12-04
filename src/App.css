@@ -47,6 +47,10 @@
 
 }
 
+.AboutMe{
+  margin: 0px;
+}
+
 /* Portfolio */
 .Websites {
   display: flex;
@@ -92,4 +96,14 @@
   color: #3c4674;
   font-size: 25px;
   padding: 10px 20px;
+}
+
+/* Contact */
+.ContactMe{
+  margin: 0px;
+}
+
+/* Resume */
+.ResumeLink{
+  margin: 0px;
 }
