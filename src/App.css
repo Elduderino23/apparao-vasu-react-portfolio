@@ -46,3 +46,50 @@
   margin: 20px;
 
 }
+
+/* Portfolio */
+.Websites {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 200px;
+}
+
+.gif_1 {
+  position: relative;
+  width: 25%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.gif_1_middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.gif_1:hover .image {
+  opacity: 0.5;
+}
+
+.gif_1:hover .gif_1_middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #7677d4;
+  color: #3c4674;
+  font-size: 25px;
+  padding: 10px 20px;
+}

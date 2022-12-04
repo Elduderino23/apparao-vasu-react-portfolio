@@ -1,13 +1,16 @@
 
 import React from 'react';
-
+import Bike from '../images background/Bike.jpg'
 const styles = {
   sectionStyles: {
-    background: 'blue',
+    background: `url(${Bike})`,
+    height: "900px",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
   },
   imageStyles:{
-    width: "350px",
-    height: "350px",
+    width: "250px",
+    height: "250px",
   }
 
 };
@@ -15,7 +18,7 @@ const styles = {
 
 function Portfolio() {
   return (
-    <section style={styles.sectionStyles} id="Websites" class="Websites">
+    <section style={styles.sectionStyles} class="Websites">
          
     <div class="gif_1">
       <a href="https://elduderino23.github.io/prework-study-guide/">
@@ -46,11 +49,11 @@ function Portfolio() {
       </a>
     </div>
     <div class="gif_1">
-      <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">
-        <img src="https://c.tenor.com/__txIuNwJpEAAAAC/modern-warfare-call-of-duty.gif" alt="Special"
+      <a href="https://turtle2001.github.io/Kronos-StatIM/">
+        <img src="https://c.tenor.com/__txIuNwJpEAAAAC/modern-warfare-call-of-duty.gif" alt="KronosStatim"
           style={styles.imageStyles}/>
         <div class="gif_1_middle">
-          <div class="text">Special</div>
+          <div class="text">KronosStatim</div>
         </div>
       </a>
     </div>
