@@ -15,7 +15,7 @@ const styles = {
 };
 const ContactForm = () => {
   const [formState, formReport] = React.useState('Send')
-  const sentIn = (e) => {
+  const testThis = (e) => {
     e.preventDefault()
     formReport('Please wait while your input submit')
     const { name, email, message } = e.target.elements
@@ -31,7 +31,7 @@ const ContactForm = () => {
    <section style={styles.contactStyles}>
      <div className="container mt-5">
       <h2 className="mb-3 ContactMe"style={styles.textStyle}>Contact</h2>
-      <form sentIn={sentIn}>
+      <form onSubmit={testThis}>
         <div className="mb-3">
           <label className="form-label" htmlFor="name" style={styles.textStyle}>
             Name
