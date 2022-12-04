@@ -2,7 +2,7 @@ import React from 'react';
 
 const styles = {
   navbarStyle: {
-    background: 'aqua',
+    background: 'skyblue',
     justifyContent: 'flex-end',
     display: 'flex'
   },
