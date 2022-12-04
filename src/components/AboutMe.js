@@ -8,7 +8,8 @@ const styles = {
     backgroundSize: "cover"
   },
   textStyle: {
-    color: "sandybrown",
+    color: "gold",
+    textShadow: "2px 2px 1px black, 0 0 25px maroon, 0 0 5px darkblue"
   },
   // portraitStyles: {
   //   background: `url(${City})`,

@@ -1,4 +1,14 @@
 import React from 'react'
+import Stairs from '../images background/Stairs.jpg'
+const styles = {
+  contactStyles: {
+    background: `url(${Stairs})`,
+    height: "900px",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }
+
+};
 const ContactForm = () => {
   const [formState, formReport] = React.useState('Send')
   const sentIn = (e) => {
@@ -12,9 +22,11 @@ const ContactForm = () => {
     }
     console.log(subForm)
   }
+  
   return (
-    <div className="container mt-5">
-      <h2 className="mb-3">Submit</h2>
+   <section style={styles.contactStyles}>
+     <div className="container mt-5">
+      <h2 className="mb-3">Contact</h2>
       <form sentIn={sentIn}>
         <div className="mb-3">
           <label className="form-label" htmlFor="name">
@@ -39,6 +51,7 @@ const ContactForm = () => {
         </button>
       </form>
     </div>
+   </section>
   )
 }
 export default ContactForm

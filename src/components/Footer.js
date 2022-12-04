@@ -16,9 +16,9 @@ const styles = {
 function Footer() {
   return (
     <nav style={styles.navbarStyle}>
-      <a href="/" style={styles.linkStyle}>LinkedIn</a>
-      <a href="/" style={styles.linkStyle}>GithHub</a>
-      <a href="/" style={styles.linkStyle}>Medium</a>
+      <a href="https://www.linkedin.com/in/vasu-apparao-312b1513b/"style={styles.linkStyle}>LinkedIn</a>
+      <a href="https://github.com/Elduderino23"style={styles.linkStyle}>GithHub</a>
+      <a href="https://medium.com/@vasutamirisaapparao"style={styles.linkStyle}>Medium</a>
     </nav>
   );
 }

@@ -28,6 +28,11 @@ function Portfolio() {
           <div class="text">Prework</div>
         </div>
       </a>
+      <a href="https://github.com/Elduderino23/prework-study-guide">
+        <div class="gif_1_middle">
+        <img src='GitHub.png' alt="Prework"style={styles.imageStyles}/>
+        </div>
+      </a>
     </div>
     <div class="gif_1">
       <a href="https://elduderino23.github.io/horiseon-accessibility-rework/">
@@ -54,6 +59,24 @@ function Portfolio() {
           style={styles.imageStyles}/>
         <div class="gif_1_middle">
           <div class="text">KronosStatim</div>
+        </div>
+      </a>
+    </div>
+    <div class="gif_1">
+      <a href="https://github.com/Elduderino23/apparao-vasu-pwa">
+        <img src="https://media.tenor.com/ZN-NVOQqSV8AAAAd/alex-mason-codm.gif"  alt="PWA"
+          style={styles.imageStyles}/>
+        <div class="gif_1_middle">
+          <div class="text">PWA</div>
+        </div>
+      </a>
+    </div>
+    <div class="gif_1">
+      <a href="https://elduderino23.github.io/apparao-vasu-calender/">
+        <img src= alt="Calendar"
+          style={styles.imageStyles}/>
+        <div class="gif_1_middle">
+          <div class="text">Calendar</div>
         </div>
       </a>
     </div>
