@@ -22,7 +22,7 @@ function AboutMe() {
   return (
     <section style={styles.sectionStyles}>
       <h2 style={styles.textStyle}>About Me</h2>
-      <img src={Portrait}></img>
+      <img className="portrait"  src={Portrait}></img>
       <p style={styles.textStyle}>
       My name is Vasu Apparao and I am an aspiring full stack web developer with a background in 2D Animation and Japanese language. 
       I work well in teams and great at completing tasks both large and small. 

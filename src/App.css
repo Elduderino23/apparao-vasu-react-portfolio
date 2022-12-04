@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+/* About Me  */
+.portrait {
+  position: relative;
+  filter: grayscale(50%);
+  width: 300px;
+  border: 15px;
+  margin: 20px;
+
+}
