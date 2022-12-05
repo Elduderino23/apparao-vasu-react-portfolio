@@ -37,6 +37,10 @@
   }
 }
 
+/* Navbar */
+.activate{
+  font-size: xx-large;
+}
 /* About Me  */
 .portrait {
   position: relative;
@@ -56,7 +60,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: 200px;
+  margin-left: 0px;
 }
 
 .gif_1 {
@@ -78,7 +82,7 @@
   opacity: 0;
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 10%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
 }
@@ -96,6 +100,7 @@
   color: #3c4674;
   font-size: 25px;
   padding: 10px 20px;
+  margin-left: 100px;
 }
 
 /* Contact */

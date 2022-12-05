@@ -15,13 +15,13 @@ const styles = {
 
 
 
-function Navbar({setCurrentPage}) {
+function Navbar({setCurrentPage, currentPage}) {
   return (
     <nav style={styles.navbarStyle}>
-      <a href="#" style={styles.linkStyle}onClick={()=>{setCurrentPage("about")}}>About Me</a>
-      <a href="#" style={styles.linkStyle}onClick={()=>{setCurrentPage("portfolio")}}>Portfolio</a>
-      <a href="#" style={styles.linkStyle}onClick={()=>{setCurrentPage("contact")}}>Contact</a>
-      <a href="#" style={styles.linkStyle}onClick={()=>{setCurrentPage("resume")}}>Resume</a>
+      <a href="#" className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'}style={styles.linkStyle}onClick={()=>{setCurrentPage("about")}}>About Me</a>
+      <a href="#" className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}style={styles.linkStyle}onClick={()=>{setCurrentPage("portfolio")}}>Portfolio</a>
+      <a href="#" className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}style={styles.linkStyle}onClick={()=>{setCurrentPage("contact")}}>Contact</a>
+      <a href="#" className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}style={styles.linkStyle}onClick={()=>{setCurrentPage("resume")}}>Resume</a>
     </nav>
   );
 }

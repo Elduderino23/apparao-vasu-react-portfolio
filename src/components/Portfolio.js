@@ -17,7 +17,7 @@ const styles = {
     background: `url(${GitHub})`,
     width: "50px",
     height: "50px",
-    marginRight: "375px",
+    marginRight: "300px",
   },
   textStyle: {
     color: "gold",
