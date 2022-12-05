@@ -8,6 +8,8 @@ const styles = {
   },
   linkStyle:{
     margin: '10px',
+    color: "gold",
+    textShadow: "2px 2px 1px black, 0 0 25px maroon, 0 0 5px darkblue"
   }
 };
 
