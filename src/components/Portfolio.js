@@ -17,7 +17,7 @@ const styles = {
     background: `url(${GitHub})`,
     width: "50px",
     height: "50px",
-    marginLeft: "200px"
+    marginRight: "375px",
   },
   textStyle: {
     color: "gold",
@@ -30,23 +30,23 @@ const styles = {
 function Portfolio() {
   return (
     <section style={styles.sectionStyles} className="Websites">
-         <h2 style={styles.textStyle}> Portfolio</h2>
     <div className="gif_1">
-      <a href="https://elduderino23.github.io/prework-study-guide/">
-        <img src="https://c.tenor.com/AtJ9NKLndOQAAAAd/simonriley-simon-ghost-riley.gif" alt="Prework"
+      <a href="https://elduderino23.github.io/apparao_vasu_password_generator/">
+        <img src="https://c.tenor.com/AtJ9NKLndOQAAAAd/simonriley-simon-ghost-riley.gif" alt="PasswordGenerator"
           style={styles.imageStyles}/>
         <div className="gif_1_middle">
-          <div className="text">Prework</div>
+          <div className="text">Password Generator</div>
         </div>
       </a>
-
-      <a href="https://github.com/Elduderino23/prework-study-guide">
+    </div>
+    <div className="gif_1">
+    <a href="https://github.com/Elduderino23/apparao_vasu_password_generator">
         <div className="gif_1_middle">
         <img src={GitHub} alt="Repo"style={styles.gitHubStyles}/>
         </div>
-      </a>
-
+      </a> 
     </div>
+
     <div className="gif_1">
       <a href="https://elduderino23.github.io/horiseon-accessibility-rework/">
         <img src="https://c.tenor.com/pA8Od8zd87UAAAAd/korndawg-cod.gif" alt="Horiseon"
@@ -55,76 +55,83 @@ function Portfolio() {
           <div className="text">Horiseon</div>
         </div>
       </a>
-
-      <a href="https://github.com/Elduderino23/horiseon-accessibility-rework">
+    </div>
+    <div className="gif_1">
+    <a href="https://github.com/Elduderino23/horiseon-accessibility-rework">
         <div className="gif_1_middle">
         <img src={GitHub} alt="Repo"style={styles.gitHubStyles}/>
         </div>
-      </a>
+      </a> 
     </div>
 
     <div className="gif_1">
-      <a href="https://elduderino23.github.io/apparao-mini-project/">
-        <img src="https://c.tenor.com/mSygXLnH7cUAAAAC/dogearmy-dogecoin.gif" alt="Mini Project"
-          style={styles.imageStyles}/>
-        <div className="gif_1_middle">
-          <div className="text">Mini Project</div>
-        </div>
-      </a>
-
-      <a href="https://github.com/Elduderino23/apparao-mini-project">
-        <div className="gif_1_middle">
-        <img src={GitHub} alt="Repo"style={styles.gitHubStyles}/>
-        </div>
-      </a>
-    </div>
-    <div className="gif_1">
-      <a href="https://turtle2001.github.io/Kronos-StatIM/">
+    <a href="https://turtle2001.github.io/Kronos-StatIM/">
         <img src="https://c.tenor.com/__txIuNwJpEAAAAC/modern-warfare-call-of-duty.gif" alt="KronosStatim"
           style={styles.imageStyles}/>
         <div className="gif_1_middle">
           <div className="text">KronosStatim</div>
         </div>
       </a>
-
-      <a href="https://github.com/turtle2001/Kronos-StatIM">
+    </div>
+    <div className="gif_1">
+    <a href="https://github.com/turtle2001/Kronos-StatIM">
         <div className="gif_1_middle">
         <img src={GitHub} alt="Repo"style={styles.gitHubStyles}/>
         </div>
       </a>
     </div>
+
     <div className="gif_1">
-      <a href="https://apparao-vasu-pwa.herokuapp.com/">
+    <a href="https://apparao-vasu-pwa.herokuapp.com/">
         <img src="https://media.tenor.com/ZN-NVOQqSV8AAAAd/alex-mason-codm.gif"  alt="PWA"
           style={styles.imageStyles}/>
         <div className="gif_1_middle">
           <div className="text">PWA</div>
         </div>
       </a>
-
-      <a href="https://github.com/Elduderino23/apparao-vasu-pwa">
+    </div>
+    <div className="gif_1">
+    <a href="https://github.com/Elduderino23/apparao-vasu-pwa">
         <div className="gif_1_middle">
         <img src={GitHub} alt="Repo"style={styles.gitHubStyles}/>
+        </div>
+      </a>
+    </div>
+
+    <div className="gif_1">
+    <a href="https://elduderino23.github.io/apparao-vasu-calender/">
+        <img src="https://media.tenor.com/mSygXLnH7cUAAAAC/dogearmy-dogecoin.gif" alt="Calendar"
+          style={styles.imageStyles}/>
+        <div className="gif_1_middle">
+          <div className="text">Calendar</div>
+          </div>
+      </a>
+    </div>
+    <div className="gif_1">
+    <a href="https://github.com/Elduderino23/apparao-vasu-calender">
+        <div className="gif_1_middle">
+        <img src={GitHub} alt="Repo"style={styles.gitHubStyles}/>
+        </div>
+      </a>
+    </div>
+
+    <div className="gif_1">
+    <a href="https://elduderino23.github.io/apparao-vasu-weather/">
+        <img src="https://media.tenor.com/UPCN5wj34n0AAAAd/call-of.gif" alt="Weather"
+          style={styles.imageStyles}/>
+        <div className="gif_1_middle">
+          <div className="text">Weather</div>
         </div>
       </a>
     </div>
     <div className="gif_1">
-      <a href="https://elduderino23.github.io/apparao-vasu-calender/">
-        <img src="https://media.tenor.com/UPCN5wj34n0AAAAd/call-of.gif" alt="Calendar"
-          style={styles.imageStyles}/>
-        <div className="gif_1_middle">
-          <div className="text">Calendar</div>
-        </div>
-
-        <a href="https://github.com/Elduderino23/apparao-vasu-calender">
+    <a href="https://github.com/Elduderino23/apparao-vasu-weather">
         <div className="gif_1_middle">
         <img src={GitHub} alt="Repo"style={styles.gitHubStyles}/>
         </div>
       </a>
-      </a>
     </div>
- 
-      
+
     </section>
   );
 }
