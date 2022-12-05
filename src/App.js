@@ -26,7 +26,7 @@ if(currentPage == "resume"){
   }
   return (
     <div>
-      <Navbar setCurrentPage = {setCurrentPage}></Navbar>
+      <Navbar setCurrentPage = {setCurrentPage} currentPage = {currentPage}></Navbar>
 {renderPage()}
 
 <Footer></Footer>

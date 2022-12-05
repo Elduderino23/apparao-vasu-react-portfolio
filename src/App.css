@@ -38,9 +38,11 @@
 }
 
 /* Navbar */
-/* .highlightNav:active{
-  background-color: gold;
-} */
+.linkStyle{
+  margin: 10px;
+  color: gold;
+  text-shadow: 2px 2px 1px black, 0 0 25px maroon, 0 0 5px darkblue;
+}
 /* About Me  */
 .portrait {
   position: relative;
