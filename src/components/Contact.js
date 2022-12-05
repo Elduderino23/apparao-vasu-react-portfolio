@@ -18,16 +18,7 @@ const ContactForm = () => {
   const [email, setEmail] = useState('');
   const [formState] = useState('Send')
   const [errorMessage, setErrorMessage] = useState('');
-  // const testThis = (e) => {
-  //   e.preventDefault()
-  //   formReport('Please wait while your input submit')
-  //   const { name, email, message } = e.target.elements
-  //   let subForm = {
-  //     name: name.value,
-  //     email: email.value,
-  //     message: message.value,
-  //   }
-  // }
+
     const handleInputChange = (e) => {
       const { target } = e;
       const inputType = target.name;

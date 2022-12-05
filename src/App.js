@@ -35,5 +35,3 @@ if(currentPage == "resume"){
 }
 
 export default App;
-
-{/* <Page currentPage = {currentPage}></Page> */}

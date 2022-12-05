@@ -12,11 +12,7 @@ const styles = {
     textShadow: "2px 2px 1px black, 0 0 25px maroon, 0 0 5px darkblue",
     backgroundColor: "#00009c8b"
   },
-  // portraitStyles: {
-  //   background: `url(${City})`,
-  //   height: "900px",
-  //   backgroundSize: "cover"
-  // },
+ 
 };
 
 
