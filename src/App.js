@@ -11,11 +11,11 @@ function App() {
   // var currentPage = "about"
   const [currentPage, setCurrentPage] = useState("about")
   function renderPage(){
-if(currentPage =="about"){
-  return<AboutMe></AboutMe>
-}
-if(currentPage == "portfolio"){
-  return<Portfolio></Portfolio>
+    if(currentPage =="about"){
+      return<AboutMe></AboutMe>
+    }
+    if(currentPage == "portfolio"){
+      return<Portfolio></Portfolio>
 }
 if(currentPage == "contact"){
   return<ContactForm></ContactForm>
@@ -27,7 +27,6 @@ if(currentPage == "resume"){
   return (
     <div>
       <Navbar setCurrentPage = {setCurrentPage}></Navbar>
-
 {renderPage()}
 
 <Footer></Footer>
@@ -36,3 +35,5 @@ if(currentPage == "resume"){
 }
 
 export default App;
+
+{/* <Page currentPage = {currentPage}></Page> */}

@@ -38,9 +38,9 @@
 }
 
 /* Navbar */
-.activate{
-  font-size: xx-large;
-}
+/* .highlightNav:active{
+  background-color: gold;
+} */
 /* About Me  */
 .portrait {
   position: relative;
