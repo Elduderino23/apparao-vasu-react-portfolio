@@ -1,4 +1,4 @@
-import React { useState} from 'react';
+import { React, useState} from 'react';
 import { validEmail } from '../utils/helper';
 import Stairs from '../images background/Stairs.jpg'
 const styles = {
@@ -16,6 +16,7 @@ const styles = {
 };
 const ContactForm = () => {
   const [formState, formReport] = React.useState('Send')
+  const [errorMessage, setErrorMessage] = useState('');
   const testThis = (e) => {
     e.preventDefault()
     formReport('Please wait while your input submit')
@@ -25,9 +26,8 @@ const ContactForm = () => {
       email: email.value,
       message: message.value,
     }
-    const [email, setEmail] = useState('');
-    const [errorMessage, setErrorMessage] = useState('');
-  
+    // const [email, setEmail] = useState('');
+  }
     const handleInputChange = (e) => {
       const { target } = e;
       const inputType = target.name;
