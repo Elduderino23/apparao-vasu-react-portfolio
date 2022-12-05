@@ -1,4 +1,5 @@
-import React from 'react'
+import React { useState} from 'react';
+import { validEmail } from '../utils/helper';
 import Stairs from '../images background/Stairs.jpg'
 const styles = {
   contactStyles: {
@@ -24,8 +25,34 @@ const ContactForm = () => {
       email: email.value,
       message: message.value,
     }
+    const [email, setEmail] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
+  
+    const handleInputChange = (e) => {
+      const { target } = e;
+      const inputType = target.name;
+      const inputValue = target.value;
+  
+      if (inputType === 'email') {
+        setEmail(inputValue);
+      } else {
+        return false;
+      }
+    };
+  
+    const handleFormSubmit = (e) => {
+      e.preventDefault();
+  
+      if (!validEmail(email)) {
+        setErrorMessage('Email is invalid');
+        return;
+      
+      }
+  
+      setEmail('');
     console.log(subForm)
   }
+
   
   return (
    <section style={styles.contactStyles}>
@@ -36,7 +63,10 @@ const ContactForm = () => {
           <label className="form-label" htmlFor="name" style={styles.textStyle}>
             Name
           </label>
-          <input className="form-control" type="text" id="name" required />
+          <input className="form-control" type="email" id="name" required value={email}
+          name="email"
+          onChange={handleInputChange}
+          placeholder="email" />
         </div>
         <div className="mb-3">
           <label className="form-label" htmlFor="email" style={styles.textStyle}>
@@ -50,10 +80,15 @@ const ContactForm = () => {
           </label>
           <textarea className="form-control" id="message" required />
         </div>
-        <button className="btn btn-danger" type="submit" style={styles.textStyle}>
+        <button className="btn btn-danger" type="submit" style={styles.textStyle} onClick={handleFormSubmit}>
           {formState}
         </button>
       </form>
+      {errorMessage && (
+        <div>
+          <p className="error-text">{errorMessage}</p>
+        </div>
+      )}
     </div>
    </section>
   )
